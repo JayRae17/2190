@@ -1,10 +1,8 @@
 window.onload=function(){
     var submit = document.getElementById("sub");
-    
-    submit.addEventListener('click',validate);
-    
-    function validate(){
-        var a=document.getElementById("a").value;
+    var but = document.getElementById("but");
+     var frm = document.getElementById("frm");
+    var a=document.getElementById("a").value;
         var b=document.getElementById("b").value;
         var c=document.getElementById("c").value;
         var d=document.getElementById("d").value;
@@ -12,29 +10,36 @@ window.onload=function(){
         var f=document.getElementById("f").value;
         
         var w = document.getElementById("mySel");
+    
+    submit.addEventListener('click',function(){
+       
         /* validates*/
        if (isNotEmpty() && isDig() && isStr() && isCred() &&
        isSem())
        {
-           console.log("yea");
+           document.getElementById("a").classList.add("valid");
+            document.getElementById("b").classList.add("valid");
+            document.getElementById("c").classList.add("valid");
+            document.getElementById("d").classList.add("valid");
+            document.getElementById("e").classList.add("valid");
+            document.getElementById("f").classList.add("valid");
        }else{
-           console.log('hush');
-           submit.disabled = true;
-       
+            document.getElementById("a").classList.add("error");
+            document.getElementById("b").classList.add("error");
+            document.getElementById("c").classList.add("error");
+            document.getElementById("d").classList.add("error");
+            document.getElementById("e").classList.add("error");
+            document.getElementById("f").classList.add("error");
+            submit.disabled = true;
+            but.addEventListener('click', reset);
        }
-       
-       
-       
-       
-       
-       
            
         function isNotEmpty(){
             if(a != null || a!= "" ||b != null || b!="" ||c != null || c!= "" ||
         d != null || d!= "" ||e != null || e!= "" ||f != null || f!= ""
         || w.value!=null ){
             return true;
-        }
+            }
         }
            
         function isDig(){
@@ -61,7 +66,16 @@ window.onload=function(){
             }
          }
          
+         function reset(){
+              document.getElementById("a").classList.remove("error");
+            document.getElementById("b").classList.remove("error");
+            document.getElementById("c").classList.remove("error");
+            document.getElementById("d").classList.remove("error");
+            document.getElementById("e").classList.remove("error");
+            document.getElementById("f").classList.remove("error");
+            submit.disabled = false;
+         }
+         
     })
     
 };
-
