@@ -1,0 +1,61 @@
+body{
+    background-color: white;
+    font-family: Verdana;
+    font-size: 1.1em;
+}
+
+table{
+    table-layout: fixed;
+    padding: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color:  #d0d0ff;
+}
+
+tbody>tr>:nth-child(1){
+ text-align:left;
+}
+
+tbody>tr>:nth-child(2){
+ text-align:center;
+}
+
+tbody>tr>:nth-child(3){
+ text-align:left;
+}
+
+tbody>tr>:nth-child(4){
+ text-align:center;
+}
+
+tbody>tr>:nth-child(5){
+ text-align:center;
+}
+
+tbody>tr>:nth-child(6){
+ text-align:center;
+}
+
+tbody>tr>:nth-child(7){
+ text-align:left;
+}
+
+th{
+    color: black;
+   padding-right: 20px;
+}
+
+td{
+    padding-right: 20px;
+    border-collapse: collapse;
+    
+}
+
+.total{
+ border-collapse: collapse;
+ border-top: solid;
+ border-top-width: 2px;
+ border-top-color: black;
+ font-weight: bold;
+
+}

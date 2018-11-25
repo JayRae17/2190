@@ -1,0 +1,68 @@
+input[value ="c7fafc6d1d3ec4671a342b64e319909f"]
+{
+ display: none;
+}
+
+body{
+    font-family: verdana;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93B1E3;
+}
+
+div{
+    background-color: white;
+    padding: 40px;
+}
+
+h1{
+    padding-bottom: 15px;
+}
+
+input{
+    width: 55%;
+    padding: 8px 5px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #87B3FE;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #FEFEFE;
+    color: black;
+    border-color: #87B3FE;
+    
+}
+
+input[type="text"] {
+    font-size:0.8em;
+    font-family: verdana;
+}
+
+#mySel{
+    position: absolute;
+    background-color: #f1f1f1;
+    padding: 5px;
+    
+}
+
+.error{
+    background-color: #FE8F8F;
+}
+
+.valid{
+    background-color: #7DFE9B;
+}
